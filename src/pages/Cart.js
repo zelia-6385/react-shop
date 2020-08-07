@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { TransitionGroup, Transition } from 'react-transition-group';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import cartEmptyImage from '../assets/img/empty-cart.jpg';
 import { CartItem, Button } from '../components';
@@ -10,6 +10,8 @@ import { clearCart, removeCartItem, plusCartItem, minusCartItem } from '../redux
 const Cart = React.memo(function Cart() {
     const dispatch = useDispatch();
     const { totalPrice, totalCount, items } = useSelector(({ cart }) => cart);
+
+    const [inFade, setInFade] = useState(false);
 
     const addedProducts = Object.keys(items).map((key) => {
         return items[key].items[0];
@@ -25,6 +27,7 @@ const Cart = React.memo(function Cart() {
         (id) => {
             if (window.confirm('Вы действительно хотите удалить?')) {
                 dispatch(removeCartItem(id));
+                setInFade(true);
             }
         },
         [dispatch],
@@ -137,7 +140,12 @@ const Cart = React.memo(function Cart() {
                     <div className="content__items">
                         <TransitionGroup className="items">
                             {addedProducts.map((obj) => (
-                                <Transition timeout={500} classNames="item" key={`${obj.name}`}>
+                                <CSSTransition
+                                    in={inFade}
+                                    onExited={() => setInFade(false)}
+                                    timeout={500}
+                                    classNames="item"
+                                    key={`${obj.name}`}>
                                     <CartItem
                                         key={`${obj.name}`}
                                         id={obj.id}
@@ -149,7 +157,7 @@ const Cart = React.memo(function Cart() {
                                         onMinus={onMinusItem}
                                         onPlus={onPlusItem}
                                     />
-                                </Transition>
+                                </CSSTransition>
                             ))}
                         </TransitionGroup>
                     </div>
