@@ -1,0 +1,84 @@
+{
+    "products": [
+      {
+        "id": 0,
+        "imageUrl": "https://static.21vek.by/img/galleries/543/433/preview/40360335_ikea_5a946689e46c6.jpeg",
+        "name": "Одвар(табурет Ikea)",
+        "price": 30,
+        "category": 0,
+        "rating": 4
+      },
+      {
+        "id": 1,
+        "imageUrl": "https://static.21vek.by/img/galleries/453/934/preview/10359791_ikea_592423e30cbfe.jpeg",
+        "name": "Адде(стул Ikea )",
+        "price": 45,
+        "category": 0,
+        "rating": 6
+      },
+      {
+        "id": 2,
+        "imageUrl": "https://static.21vek.by/img/galleries/996/413/preview/savline_011_5cd664e0757ca.jpeg",
+        "name": "Томас(стул Сав-Лайн)",
+        "price": 40,
+        "category": 2,
+        "rating": 4
+      },
+      {
+        "id": 3,
+        "imageUrl": "https://static.21vek.by/img/galleries/434/56/preview/dc060a_mio_tesoro_05_5d370dddb788b.jpeg",
+        "name": "Инес(стул Mio Tesoro)",
+        "price": 73,
+        "category": 1,
+        "rating": 2
+      },
+      {
+        "id": 4,
+        "imageUrl": "https://static.21vek.by/img/galleries/5740/152/preview/savline_055_5de0da7473dfe.jpeg",
+        "name": "Дэни(стул Сав-Лайн)",
+        "price": 52,
+        "category": 2,
+        "rating": 8
+      },
+      {
+        "id": 5,
+        "imageUrl": "https://static.21vek.by/img/galleries/453/962/preview/60360947_ikea_592453aae0a22.jpeg",
+        "name": "Стефан(стул Ikea)",
+        "price": 125,
+        "category": 0,
+        "rating": 2
+      },
+      {
+        "id": 6,
+        "imageUrl": "https://static.21vek.by/img/galleries/681/44/preview/dc017_mio_tesoro_011_5dd43a10d0737.jpeg",
+        "name": "Пина(стул Mio Tesoro)",
+        "price": 120,
+        "category": 1,
+        "rating": 9
+      },
+      {
+        "id": 7,
+        "imageUrl": "https://static.21vek.by/img/galleries/5740/174/preview/savline_034_5dde812b072f0.jpeg",
+        "name": "Арфей(стул Сав-Лайн)",
+        "price": 64,
+        "category": 2,
+        "rating": 10
+      },
+      {
+        "id": 8,
+        "imageUrl": "https://static.21vek.by/img/galleries/5672/937/preview/00420039_ikea_5d77237bd640e.jpeg",
+        "name": "Кюрре(табурет Ikea)",
+        "price": 35,
+        "category": 0,
+        "rating": 10
+      },
+      {
+        "id": 9,
+        "imageUrl": "https://static.21vek.by/img/galleries/525/335/preview/bs014_mio_tesoro_5c0564e59c21a.jpeg",
+        "name": "Сиена(Стул Mio Tesoro)",
+        "price": 100,
+        "category": 1,
+        "rating": 7
+      }
+    ]
+  }
