@@ -4,9 +4,9 @@ import products from './products';
 import cart from './cart';
 
 const rootReducer = combineReducers({
-    filters,
-    products,
-    cart,
+  filters,
+  products,
+  cart,
 });
 
 export default rootReducer;
